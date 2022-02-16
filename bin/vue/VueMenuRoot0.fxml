@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" />
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxNewWindow" contentDisplay="TOP" graphicTextGap="0.0" onAction="#newWindow" text="Nouvelle fenêtre" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="QUEUE_PLAY_NEXT" size="40" styleClass="icon0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxRestart" contentDisplay="TOP" graphicTextGap="0.0" onAction="#restart" text="Redémarrer" wrapText="true">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="COMPASS" size="40" styleClass="icon0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxExit" contentDisplay="TOP" graphicTextGap="0.0" onAction="#exit" text="Quitter" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="NEXT_WEEK" size="40" styleClass="icon0" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Système" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator maxHeight="92.0" orientation="VERTICAL" />
+   </children>
+</HBox>

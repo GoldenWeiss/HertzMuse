@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="755.0" prefWidth="1000.0" stylesheets="@../../styles/base.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="25.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar1" prefHeight="25.0" prefWidth="1000.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Fichier">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Nouvelle feuille vide" />
+                        <MenuItem mnemonicParsing="false" text="Ouvrir..." />
+                        <MenuItem mnemonicParsing="false" onAction="#loadAudioFile" text="Charger piste audio..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#exit" text="Quitter" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Clé">
+                          <items>
+                              <MenuItem mnemonicParsing="false">
+                                 <graphic>
+                                    <ComboBox fx:id="key" prefWidth="150.0" />
+                                 </graphic>
+                              </MenuItem>
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Tempo">
+                          <items>
+                            <MenuItem mnemonicParsing="false">
+                                 <graphic>
+                                    <TextField fx:id="tempo" text="100" />
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false" onAction="#setTempo" text="Set tempo" />
+                          </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Fenêtre">
+                     <items>
+                        <RadioMenuItem fx:id="rdiMusicSheet" mnemonicParsing="false" onAction="#showMusicSheet" text="Feuille de musique">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="editeur" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="rdiMelodicContour" mnemonicParsing="false" onAction="#showMelodicContour" text="Contour mélodique" toggleGroup="$editeur" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#showSpectrumAnalysis" text="Analyse spectrale">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="F2" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#showWaveform" text="Forme d'onde">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="F3" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#showPianoVisualizer" text="Visualisation sur piano">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="F4" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#showTableView" text="Tableau série temporelle">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="F5" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <Menu mnemonicParsing="false" text="Rendu des basses">
+                           <items>
+                              <MenuItem id="130" mnemonicParsing="false" onAction="#showBassesRenderer" text="130Hz">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="F6" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                              <MenuItem id="250" mnemonicParsing="false" onAction="#showBassesRenderer" text="250Hz">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="UP" code="F7" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                              </MenuItem>
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Jouer">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#togglePlay" text="Play/Pause" />
+                        <MenuItem mnemonicParsing="false" text="Enregistrer" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Aide">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showCHM" text="Fichier d'aide">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="F1" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="À propos" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <ToolBar prefHeight="40.0" prefWidth="1000.0" style="-fx-spacing: 0px;">
+              <items>
+                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+                  <Separator orientation="VERTICAL" prefWidth="4.0">
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </Separator>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+                  <Separator orientation="VERTICAL" prefWidth="4.0">
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </Separator>
+                    <ToggleButton fx:id="btnMusicSheet1" onAction="#showMusicSheet" prefHeight="25.0" prefWidth="25.0" selected="true">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="viewMode" />
+                     </toggleGroup>
+                     <tooltip>
+                        <Tooltip text="Feuille de musique déroulante" />
+                     </tooltip>
+                    </ToggleButton>
+                    <ToggleButton fx:id="btnMusicSheet2" onAction="#showMusicSheet" prefHeight="25.0" prefWidth="25.0" toggleGroup="$viewMode">
+                     <tooltip>
+                        <Tooltip text="Feuille de musique standard" />
+                     </tooltip>
+                    </ToggleButton>
+                    <ToggleButton fx:id="btnMusicSheet3" onAction="#showMelodicContour" prefHeight="25.0" prefWidth="25.0" toggleGroup="$viewMode">
+                     <tooltip>
+                        <Tooltip fx:id="tbtnMelodicContour" text="Contour mélodique" />
+                     </tooltip>
+                    </ToggleButton>
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <StackPane fx:id="stackPane1" prefHeight="680.0" prefWidth="980.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <JFXButton fx:id="jfxbutton" maxHeight="50.0" maxWidth="60.0" minHeight="50.0" minWidth="60.0" prefHeight="50.0" prefWidth="60.0" text="aaa" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxHelp" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showCHM" text="Fichier d'aide" wrapText="true">
+                     <graphic>
+                        <OctIconView glyphName="BOOK" size="40" styleClass="icon5" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxAbout" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showAbout" text="À propos" wrapText="true">
+                     <graphic>
+                        <OctIconView glyphName="QUESTION" size="40" styleClass="icon5" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxHomepage" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showHomepage" text="Page d'accueil" wrapText="true">
+                     <graphic>
+                        <OctIconView glyphName="ELLIPSIS" size="40" styleClass="icon5" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label text="Aide" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <Separator maxHeight="88.0" minHeight="-Infinity" orientation="VERTICAL" />
+   </children>
+</HBox>

@@ -1,0 +1,142 @@
+.root {
+   -fx-base: aliceblue;//rgba(244,244,244, 255);//rgb(0,128,255);//rgba(244,244,244, 255);//rgb(0,128,255)//rgb(244, 244, 244)// -fx-base: rgb(0,128,255); // dark
+-fx-focus-color: transparent;
+   }
+.hboxMenuBar {
+	
+	-fx-background-color: transparent;//-fx-base;
+}
+.dropShadowPane{
+	-fx-background-position: right bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('banner.png');
+	-fx-background-color: -fx-base;//rgb(244,244,244); 
+	-fx-effect: dropshadow(three-pass-box, darkgrey, 8, 0, 0, 2);
+	-fx-background-insets: 0;
+}
+.jfx-button{
+	-fx-background-radius: 0;
+	-fx-background-color: -fx-base;
+}
+.jfx-button:selected {
+	-fx-font-weight: bold;
+}
+
+.jfx-button:hover {
+	-fx-font-weight: bold;
+	-fx-background-color: white;
+}
+
+.layer{
+	
+}
+
+.layer:hover{
+	//-fx-background-color:  lightskyblue;
+}
+
+.layer:selected {
+	-fx-border-color: deepskyblue;
+	-fx-border-width: 1;
+	-fx-border-style: solid inside;
+	//-fx-background-color:  lightskyblue;
+}
+
+.hider{
+	-glyph-name: "KEYBOARD_ARROW_DOWN";	
+}
+.hider:selected{
+	-glyph-name: "KEYBOARD_ARROW_UP";	
+}
+
+.hiderH{
+	-glyph-name: "TRIANGLE_RIGHT";	
+}
+.hiderH:selected{
+	-glyph-name: "TRIANGLE_LEFT";	
+}
+
+/* Styling the slider thumb */
+.jfx-slider > .thumb {
+     -fx-background-color: blue;
+}
+
+/* Styling the filled track */
+.jfx-slider > .colored-track {
+     -fx-background-color: rgb(0,128,255);
+}
+
+/* Styling the animated thumb */
+.jfx-slider > .animated-thumb {
+     -fx-background-color: rgb(0,128,255);
+}
+.icon0{
+	-icons-color : dimgray;
+	-fx-fill: dimgray;
+}
+.icon0:selected{
+	-fx-fill: linear-gradient(-icons-color 0%, 
+        derive(-icons-color, 100%) 30%, derive(gray, 30%) 85%);
+}
+
+.icon1{
+	-icons-color : green;
+	-fx-fill: green;
+}
+.icon1:selected{
+	-fx-fill: linear-gradient(-icons-color 0%, 
+        derive(-icons-color, 100%) 30%, derive(greenyellow, 30%) 85%);
+}
+.iconTogglePlay{
+	-glyph-name: "PLAY";	
+}
+.iconTogglePlay:selected2{
+	-glyph-name: "STOP";
+}
+.icon2{
+	-icons-color : rgb(0,128,255);
+	-fx-fill: rgb(0,128,255);
+}
+.icon2:selected{
+	-fx-fill: linear-gradient(-icons-color 0%, 
+        derive(-icons-color, 100%) 30%, derive(blue, 30%) 85%);
+}
+.iconLayerFile{
+	-icons-color : rgb(0,128,255);
+	-fx-fill: rgb(0,128,255);
+}
+.iconLayerFile:selected{
+	-fx-fill: linear-gradient(-icons-color 0%, 
+        derive(-icons-color, 100%) 70%, derive(deepskyblue, 30%) 85%);
+}
+.icon3{
+	-icons-color : red;
+	-fx-fill: red;
+}
+.icon3:selected{
+	-fx-fill: linear-gradient(-icons-color 0%, 
+        derive(-icons-color, 100%) 30%, derive(crimson, 30%) 85%);
+}
+.iconToggleRecording{
+	-glyph-name: "MICROPHONE";	
+}
+.iconToggleRecording:selected2{
+	-glyph-name: "MICROPHONE_SLASH";
+}
+
+.icon4{
+-icons-color : purple;
+-fx-fill: purple;
+}
+.icon4:selected{
+	-fx-fill: linear-gradient(-icons-color 0%, 
+        derive(-icons-color, 100%) 30%, derive(blueviolet, 30%) 85%);
+}
+.icon5{
+-icons-color : orange;
+-fx-fill: orange;
+}
+.icon5:selected{
+	-fx-fill: linear-gradient(-icons-color 0%, 
+        derive(-icons-color, 50%) 30%, derive(orangered, 30%) 85%);
+}

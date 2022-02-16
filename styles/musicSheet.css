@@ -1,0 +1,12 @@
+.noteImage {  
+
+}
+.noteImage:selected {
+	-fx-border-color: 
+       -fx-inner-border, 
+       black;
+ -fx-border-insets: 0, 0, 0, 0;
+}
+.paneRoot{
+	-fx-background-color: lightgrey;
+}

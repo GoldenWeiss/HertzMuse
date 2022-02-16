@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry kind="src" path="styles"/>
+	<classpathentry kind="src" path="res"/>
+	<classpathentry kind="lib" path="lib/mp3plugin.jar"/>
+	<classpathentry kind="lib" path="lib/jl1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/mp3spi1.9.5.jar"/>
+	<classpathentry kind="lib" path="lib/tritonus_share.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/jfoenix-9.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/fontawesomefx-fontawesome-4.7.0-11.jar"/>
+	<classpathentry kind="lib" path="lib/fontawesomefx-controls-11.0.jar"/>
+	<classpathentry kind="lib" path="lib/fontawesomefx-commons-11.0.jar"/>
+	<classpathentry kind="lib" path="lib/fontawesomefx-octicons-4.3.0-11.jar"/>
+	<classpathentry kind="lib" path="lib/fontawesomefx-materialicons-2.2.0-11.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

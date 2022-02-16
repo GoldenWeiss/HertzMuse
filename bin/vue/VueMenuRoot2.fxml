@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxKey" contentDisplay="TOP" graphicTextGap="0.0" onAction="#setKey" text="    Clé    " wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="ALBUM" size="40" styleClass="icon2" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxTempo" contentDisplay="TOP" graphicTextGap="0.0" onAction="#setTempo" text="Tempo" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="MUSIC_NOTE" size="40" styleClass="icon2" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxTonguing" contentDisplay="TOP" graphicTextGap="0.0" onAction="#setTonguing" text="Tonguing" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="HEARING" size="40" styleClass="icon2" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxTone" contentDisplay="TOP" graphicTextGap="0.0" onAction="#setTone" text="Tonalité" wrapText="true">
+                     <graphic>
+                        <OctIconView glyphName="TAG" size="40" styleClass="icon2" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label text="Feuille">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator maxHeight="88.0" minHeight="-Infinity" orientation="VERTICAL" />
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxVolume" contentDisplay="TOP" graphicTextGap="0.0" onAction="#setVolume" text="Volume" wrapText="true">
+                     <graphic>
+                        <OctIconView glyphName="UNMUTE" size="40" styleClass="icon2" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxDeleteLayer" contentDisplay="TOP" graphicTextGap="0.0" onAction="#deleteCurrentLayer" styleClass="icon3" text="Supprimer" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="DELETE_SWEEP" size="40" styleClass="icon2" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label text="Calque">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <Separator maxHeight="88.0" minHeight="-Infinity" orientation="VERTICAL" />
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxNoteInfo" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showNotes" text="Voir la note" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="INFO" size="40" styleClass="icon2" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxNoteSine" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showSines" text="Voir l'onde" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="RSS_FEED" size="40" styleClass="icon2" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label text="Note">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" />
+   </children>
+</HBox>

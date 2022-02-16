@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxMusicSheet4" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showMusicSheet" text="Feuille de musique" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="QUEUE_MUSIC" size="40" styleClass="icon4" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxMelodicContour4" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showMelodicContour" text="Contour mélodique" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="BLUR_LINEAR" size="40" styleClass="icon4" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label text="Principales">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <Separator minHeight="-Infinity" orientation="VERTICAL" />
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxSpectralAnalysis" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showSpectrumAnalysis" text="Analyse spectrale" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="EQUALIZER" size="40" styleClass="icon4" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxWaveForm" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showWaveform" text="Forme d'onde" wrapText="true">
+                     <graphic>
+                        <OctIconView glyphName="PULSE" size="40" styleClass="icon4" wrappingWidth="35.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxTableView" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showTableView" text="Série temporelle" wrapText="true">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TABLE" size="35" styleClass="icon4" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Utilitaires" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" />
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxPianoVisualizer" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showPianoVisualizer" text="Piano visuel" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="KEYBOARD" size="40" styleClass="icon4" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id="130" fx:id="jfxBassesRenderer" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showBassesRenderer" text="Rendu des basses" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="SPEAKER_GROUP" size="40" styleClass="icon4" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxBassesRendererArrow" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#openBassesRendererArrow" prefHeight="60.0" prefWidth="20.0" textAlignment="CENTER">
+                     <graphic>
+                        <MaterialIconView glyphName="ARROW_DROP_DOWN" size="18" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label text="Diverses">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" />
+   </children>
+</HBox>

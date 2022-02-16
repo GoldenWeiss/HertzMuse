@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="650.0" prefWidth="980.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="canvas2" height="30.0" width="900.0">
+               <VBox.margin>
+                  <Insets left="80.0" />
+               </VBox.margin></Canvas>
+            <HBox prefHeight="620.0" prefWidth="980.0">
+               <children>
+                  <Canvas fx:id="canvas3" height="620.0" width="80.0" />
+                  <StackPane prefHeight="600.0" prefWidth="900.0" styleClass="canvas" stylesheets="@../../styles/canvas-with-border.css">
+                     <children>
+                        <Canvas fx:id="canvas1" height="600.0" width="900.0" StackPane.alignment="CENTER" />
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

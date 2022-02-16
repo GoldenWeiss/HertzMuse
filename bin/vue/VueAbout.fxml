@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="367.0" fitWidth="422.0" layoutX="17.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../TestData/TestMp3File/dude.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="-29.0" prefHeight="165.0" prefWidth="387.0" text="Équipe Steiners. Remis le 2020/05/14 au Cégep Limoilou. Projet de collège du programme Sciences informatiques et mathématiques. Voir README.txt." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="361.0" text="``But he's a dude.&quot; -Okabe Rintaro">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

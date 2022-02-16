@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Canvas fx:id="canvas1" height="326.0" width="910.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="110.0" prefWidth="910.0" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <ChoiceBox fx:id="cbUnits" layoutX="126.0" layoutY="29.0" prefHeight="25.0" prefWidth="106.0" />
+            <Label layoutX="79.0" layoutY="33.0" text="Unités :">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="69.0" text="Fenêtrage :">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cbWindowing" layoutX="126.0" layoutY="65.0" prefHeight="25.0" prefWidth="106.0" />
+            <Label layoutX="262.0" layoutY="33.0" text="Détection f0 :">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cbDetectionf0" layoutX="343.0" layoutY="29.0" prefHeight="25.0" prefWidth="112.0" />
+            <ScrollBar fx:id="scrollBar1" blockIncrement="1.0" layoutX="70.0" max="17550.0" prefHeight="2.0" prefWidth="835.0" visibleAmount="4500.0" />
+            <Label layoutX="301.0" layoutY="71.0" text="Canal :">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cbChannel" layoutX="343.0" layoutY="67.0" prefHeight="25.0" prefWidth="112.0" />
+            <Label layoutX="470.0" layoutY="71.0" text="Échantillons :">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <TextField alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="549.0" layoutY="67.0" prefHeight="27.0" prefWidth="57.0" text="8192">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="cbxCentrage" layoutX="627.0" layoutY="32.0" mnemonicParsing="false" onAction="#ecouteurCentrage" prefHeight="19.0" prefWidth="105.0" text="Centrage DC">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="cbxNorm" layoutX="742.0" layoutY="32.0" mnemonicParsing="false" onAction="#ecouteurNorm" text="Normalisation">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="742.0" layoutY="68.0" mnemonicParsing="false" onAction="#toggleGrille" text="Grille">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

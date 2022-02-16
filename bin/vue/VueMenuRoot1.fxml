@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxNewEmptySheet" contentDisplay="TOP" graphicTextGap="0.0" onAction="#newEmptySheet" text="Nouvelle feuille vide" wrapText="true">
+                     <graphic>
+                        <OctIconView glyphName="FILE_CODE" size="40" styleClass="icon1" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxNewLayer" contentDisplay="TOP" graphicTextGap="0.0" onAction="#newLayer" text="Nouveau calque" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="LIBRARY_ADD" size="40" styleClass="icon1" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxNewLayerArrow" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#openNewLayerArrow" prefHeight="60.0" prefWidth="20.0" textAlignment="CENTER">
+                     <graphic>
+                        <MaterialIconView glyphName="ARROW_DROP_DOWN" size="18" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label text="Création">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <Separator maxHeight="88.0" minHeight="-Infinity" orientation="VERTICAL" />
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxMusicSheet1" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showMusicSheet" text="Feuille de musique" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="QUEUE_MUSIC" size="40" styleClass="icon1" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="jfxMelodicContour1" contentDisplay="TOP" graphicTextGap="0.0" onAction="#showMelodicContour" text="Contour mélodique" wrapText="true">
+                     <graphic>
+                        <MaterialIconView glyphName="BLUR_LINEAR" size="40" styleClass="icon1" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Fenêtres" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator maxHeight="88.0" orientation="VERTICAL" />
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="jfxTogglePlay" contentDisplay="TOP" graphicTextGap="0.0" onAction="#togglePlay" text="  Arrêter  " wrapText="true">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="STOP" size="30">
+                           <styleClass>
+                              <String fx:value="icon1" />
+                              <String fx:value="iconTogglePlay" />
+                           </styleClass>
+                        </FontAwesomeIconView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Jouer" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator maxHeight="88.0" orientation="VERTICAL" />
+   </children>
+</HBox>

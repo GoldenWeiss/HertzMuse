@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@../../styles/base.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="120.0" minWidth="50.0" prefHeight="800.0" prefWidth="1000.0">
+         <center>
+            <StackPane fx:id="stackPane1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: lightgrey;" BorderPane.alignment="TOP_LEFT" />
+         </center>
+         <top>
+            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="120.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane fx:id="stackPane3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="120.0">
+                     <children>
+                        <BorderPane fx:id="borderPane1" maxHeight="90.0" maxWidth="1.7976931348623157E308" prefHeight="90.0" styleClass="dropShadowPane" StackPane.alignment="BOTTOM_LEFT">
+                           <left>
+                              <StackPane fx:id="stackPane2" alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="120.0" prefWidth="1000.0" BorderPane.alignment="TOP_LEFT" />
+                           </left>
+                        </BorderPane>
+                        <HBox fx:id="hboxMenuBar" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="30.0" styleClass="hboxMenuBar" StackPane.alignment="TOP_LEFT">
+                           <children>
+                              <JFXButton fx:id="jfxFichier" contentDisplay="CENTER" ellipsisString="" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" ripplerFill="#ee0000" text="Fichier" textAlignment="CENTER" textOverrun="CLIP" />
+                              <JFXButton fx:id="jfxAccueil" contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Accueil" />
+                              <JFXButton fx:id="jfxEdition" contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Édition" />
+                              <JFXButton fx:id="jfxEnregistrement" contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Enregistrement" />
+                              <JFXButton fx:id="jfxFenetre" contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Fenêtres" />
+                              <JFXButton fx:id="jfxAide" contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Aide" />
+                              <HBox alignment="TOP_RIGHT" prefWidth="100.0">
+                                 <children>
+                                    <JFXButton fx:id="jfxHider" onAction="#toggleMenuComponent">
+                                       <graphic>
+                                          <MaterialIconView glyphName="KEYBOARD_ARROW_UP" size="16" styleClass="hider" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </StackPane>
+         </top>
+         <left>
+            <HBox fx:id="leftPane" maxHeight="1.7976931348623157E308" BorderPane.alignment="CENTER">
+               <children>
+                  <SplitPane dividerPositions="0.40707964601769914" orientation="VERTICAL" prefHeight="616.0" prefWidth="180.0" style="-fx-background-color: transparent;">
+                     <items>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <Label fx:id="lblSheetTitle" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" style="-fx-font-weight: bold;" text="Mon Titre">
+                                 <graphic>
+                                    <MaterialIconView glyphName="STAR_BORDER" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Pages">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <JFXButton fx:id="jfxPageMinus">
+                                       <graphic>
+                                          <MaterialIconView glyphName="KEYBOARD_ARROW_LEFT" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton fx:id="jfxPageName" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="Titre de la page">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <JFXButton fx:id="jfxPagePlus">
+                                       <graphic>
+                                          <MaterialIconView glyphName="KEYBOARD_ARROW_RIGHT" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <JFXListView fx:id="jfxPageList" fixedCellSize="20.0" focusTraversable="false" maxHeight="1.7976931348623157E308" minHeight="100.0" prefHeight="200.0" showTooltip="true" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                           <children>
+                              <Label alignment="CENTER" prefWidth="35.0" text="Calques">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                 <content>
+                                    <VBox fx:id="layersVbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </items>
+                  </SplitPane>
+                  <JFXButton fx:id="jfxPageHider" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="11.0" minWidth="11.0" onAction="#toggleLeftPane" prefHeight="680.0" prefWidth="11.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                     <graphic>
+                        <OctIconView glyphName="TRIANGLE_LEFT" size="16" styleClass="hiderH" textAlignment="RIGHT" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

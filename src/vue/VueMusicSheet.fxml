@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+
+<ScrollPane cacheShape="false" centerShape="false" fitToHeight="true" fitToWidth="true" focusTraversable="false" pickOnBounds="false" scaleShape="false" style="-fx-background: lightgrey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="800.0" styleClass="paneRoot" stylesheets="@../../styles/musicSheet.css">
+         <children>
+            <Canvas fx:id="canvas1" height="680.0" styleClass="paneRoot" width="800.0" />
+         </children>
+      </Pane>
+   </content>
+   <padding>
+      <Insets left="2.0" />
+   </padding>
+</ScrollPane>
