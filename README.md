@@ -1,4 +1,4 @@
-Integration project made in college (2020) on spectral analysis using Agile deployment methods. We tried notes detection using the Fourrier transform and a naive tonguing-detection algorithm. 
+Integration project made in college (2020) on spectral analysis using Agile deployment methods. We tried notes detection (works on long notes) using the Fourrier transform and a naive tonguing-detection algorithm. 
 
 Made in Eclipse 2020-09. Used SceneBuilder for the FXML. The following libraries are required to run this app :<br />
 
