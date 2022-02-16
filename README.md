@@ -1,4 +1,4 @@
-Integration project made in college (2020). We tried notes detection using the Fourrier transform and a naive tonguing-detection algorithm. 
+Integration project made in college (2020) on spectral analysis. We tried notes detection using the Fourrier transform and a naive tonguing-detection algorithm. 
 The following libraries are required to run this app :<br />
 
 JavaFx<br />
