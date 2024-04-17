@@ -7,5 +7,5 @@ JavaFx<br />
 *in /libs* FontAwesomefx (download the libs on bintray)<br />
 *in /libs* Jfoenix (jfoenix-9.jar)<br />
 
-![Alt text](https://cdn.discordapp.com/attachments/404481664144769036/943349528445198416/2020-05-14_6.png)
-![Alt text](https://cdn.discordapp.com/attachments/404481664144769036/943349885363716126/2020-05-14_5.png)
+![2020-05-14_6](https://github.com/GoldenWeiss/HertzMuse/assets/61291515/cbdf7eaf-8a3e-4216-9635-32299b46e95b)
+![2020-05-14_5](https://github.com/GoldenWeiss/HertzMuse/assets/61291515/75441884-1d59-488c-a3b5-f25ae58eadc3)
